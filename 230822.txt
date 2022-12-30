@@ -1,0 +1,49 @@
+Daily Notes
+
+22nd Aug
+Eventuk reg.web
+
+ strToBool = (termsAgreed: string ) =>{
+        debugger;
+        switch(termsAgreed.toLowerCase().trim()){
+            case "true": case "yes": case "1": return true;
+            case "false": case "no": case "0": case null: return false;
+            default: return Boolean(termsAgreed);
+        }
+    }
+
+  termsAgreed: this.strToBool(formData.termsAgreed),
+
+
+
+23rd Aug
+
+query raised 
+
+Hi, @Sneha Mallick , @Rahul Vemula , @Arunangshu De  If we are sending below payload 
+Request URL:https://apim-eventuk-dev.azure-api.net/api/SignUp
+
+{"legalName":"","shortName":"test","bio":"","shortDescription":"test","termsAgreed":true,"requirePayment":"No","requirePaymentComment":"","contactInformation":{"title":"Mr","firstName":"test","lastName":"test","mobileTelephone":"8888888888","otherTelephone":"888888888","email":"test1@gmail.com"},"linkInformation":[]}
+
+We are receiving the below response
+
+{"error":[{"columnName":"Terms Agreed","errorType":"Error","errorMessage":"Please read the terms and conditions and tick the box to confirm."}]} 
+
+Could you please check this once so we can proceed with this defect.
+
+CC: @stephen 
+
+
+
+
+26th Aug
+
+in main.scss
+
+// label:after {
+//     content:"*";
+//     color: red;
+//     font-weight: bold;
+
+
+// }
